@@ -1,0 +1,117 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           advent-of-code-y2023
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/JSafieddine/advent-of-code-y2023#readme>
+homepage:       https://github.com/JSafieddine/advent-of-code-y2023#readme
+bug-reports:    https://github.com/JSafieddine/advent-of-code-y2023/issues
+author:         Jamal Safieddine
+maintainer:     mister.recursive@gmail.com
+copyright:      2023 Jamal Safieddine
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/JSafieddine/advent-of-code-y2023
+
+library
+  exposed-modules:
+      AdventOfCode.Day1
+      AdventOfCode.Day10
+      AdventOfCode.Day11
+      AdventOfCode.Day12
+      AdventOfCode.Day13
+      AdventOfCode.Day14
+      AdventOfCode.Day15
+      AdventOfCode.Day16
+      AdventOfCode.Day17
+      AdventOfCode.Day18
+      AdventOfCode.Day19
+      AdventOfCode.Day2
+      AdventOfCode.Day20
+      AdventOfCode.Day21
+      AdventOfCode.Day22
+      AdventOfCode.Day23
+      AdventOfCode.Day24
+      AdventOfCode.Day25
+      AdventOfCode.Day3
+      AdventOfCode.Day4
+      AdventOfCode.Day5
+      AdventOfCode.Day6
+      AdventOfCode.Day7
+      AdventOfCode.Day8
+      AdventOfCode.Day9
+  other-modules:
+      Paths_advent_of_code_y2023
+  autogen-modules:
+      Paths_advent_of_code_y2023
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable advent-of-code-y2023-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_advent_of_code_y2023
+  autogen-modules:
+      Paths_advent_of_code_y2023
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      advent-of-code-y2023
+    , base >=4.7 && <5
+  default-language: Haskell2010
+
+test-suite advent-of-code-y2023-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      AdventOfCode.Day10Spec
+      AdventOfCode.Day11Spec
+      AdventOfCode.Day12Spec
+      AdventOfCode.Day13Spec
+      AdventOfCode.Day14Spec
+      AdventOfCode.Day15Spec
+      AdventOfCode.Day16Spec
+      AdventOfCode.Day17Spec
+      AdventOfCode.Day18Spec
+      AdventOfCode.Day19Spec
+      AdventOfCode.Day1Spec
+      AdventOfCode.Day20Spec
+      AdventOfCode.Day21Spec
+      AdventOfCode.Day22Spec
+      AdventOfCode.Day23Spec
+      AdventOfCode.Day24Spec
+      AdventOfCode.Day25Spec
+      AdventOfCode.Day2Spec
+      AdventOfCode.Day3Spec
+      AdventOfCode.Day4Spec
+      AdventOfCode.Day5Spec
+      AdventOfCode.Day6Spec
+      AdventOfCode.Day7Spec
+      AdventOfCode.Day8Spec
+      AdventOfCode.Day9Spec
+      Paths_advent_of_code_y2023
+  autogen-modules:
+      Paths_advent_of_code_y2023
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      advent-of-code-y2023
+    , base >=4.7 && <5
+    , hspec
+  default-language: Haskell2010
