@@ -35,6 +35,10 @@ ghc-options:
 
 library:
   source-dirs: src
+  dependencies:
+    - containers
+    - megaparsec
+    - parser-combinators
 
 executables:
   advent-of-code-y2023-exe:
@@ -58,3 +62,6 @@ tests:
     dependencies:
     - advent-of-code-y2023
     - hspec
+    - hspec-megaparsec
+    - megaparsec
+    - containers
