@@ -4,12 +4,12 @@ module AdventOfCode.Day8Spec (spec) where
 
 import AdventOfCode.Day8 (part1, part2)
 import Data.Functor ((<&>))
-import Test.Hspec (Spec, describe, it, pendingWith, shouldReturn)
+import Test.Hspec (Spec, describe, it, shouldReturn)
 
 spec :: Spec
 spec = do
   describe "test day 8" $ do
     it "part one" $
-      pendingWith "Not yet implemented!" <* ((readFile "test/Data/Day8.txt" <&> part1) `shouldReturn` -1)
+      (readFile "test/Data/Day8-1.txt" <&> part1) `shouldReturn` 6
     it "part two" $
-      pendingWith "Not yet implemented!" <* ((readFile "test/Data/Day8.txt" <&> part2) `shouldReturn` -1)
+      (readFile "test/Data/Day8-2.txt" <&> part2) `shouldReturn` 6
