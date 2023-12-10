@@ -38,6 +38,8 @@ library:
   dependencies:
     - containers
     - megaparsec
+    - microlens
+    - mtl
     - parser-combinators
 
 executables:
