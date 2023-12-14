@@ -41,6 +41,7 @@ library:
     - microlens
     - mtl
     - parser-combinators
+    - split
 
 executables:
   advent-of-code-y2023-exe:
